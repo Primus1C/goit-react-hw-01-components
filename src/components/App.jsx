@@ -13,49 +13,39 @@ export const App = () => {
     
     <div
       style={{
-        height: '100vh',
+        //height: '100vh',
+        height: 'auto',
         display: 'flex',
+        flexDirection: 'column',
+
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 40,
+        fontSize: 20,
         color: '#010101'
       }}
     >
-      React homework template
-
       
-                
-            <Profile
-                username={user.username}
-                tag={user.tag}
-                location={user.location}
-                avatar={user.avatar}
-                stats={user.stats}
-            />
-      
-       <div className="container">{
-                <Statistics
-                    stats={data}
-                />
-            }</div>
-
-            <div className="container">{
-                <FriendList friends={friends}
-                />
-            }</div>
-
-            <div className="container">{
-                <TransactionHistory items={transactions}
-                />
-            }</div>
-
-      
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
+            
+      <Statistics
+        stats={data}
+      />
+            
+      <FriendList
+        friends={friends}
+      />
+            
+      <TransactionHistory
+        items={transactions}
+      />
+            
     </div>
-    
-    
-  
-
-
     
   );
 };

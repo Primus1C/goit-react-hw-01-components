@@ -6,6 +6,7 @@
     border: solid;
     border-radius: 6px;
     border-color: rgb(216, 224, 234);
+    margin-top: 20px;
 }
 
 .statistics__title {
@@ -15,16 +16,15 @@
 
 .statistics__stat-list {
     display: flex;
-    
-    
+    padding: 0;
+    margin: 0;
 }
 
 .statistics__item {
     display: flex;
     flex-direction: column;
-    width: 50px;
+    width: 60px;
     padding:  10px;
-   
 }
 
 .statistics__label {

@@ -4,10 +4,11 @@
     align-items: center;
     justify-content: center;
     background-color: whitesmoke;
-    width: 260px;
+    width: 280px;
     border: solid;
     border-radius: 6px;
     border-color: rgb(216, 224, 234);
+    margin-top: 20px;
 }
 
 .profile__description {
@@ -45,7 +46,11 @@
     list-style-type: none;
     width: 100%;
     background-color: rgb(243, 246, 249);
-    margin-top: 20px;
+    /*margin-top: 20px;*/
+    /*margin-left: auto;*/
+    padding: 0;
+    margin: 0;
+   
 }
 
 .profile__statItem {

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     padding-left: 40px;
-    width: 300px;
+    width: 250px;
     align-items: center;
     gap: 30px;
     background-color: beige;
@@ -28,7 +28,7 @@
 }
 
 .friendlistitem__avatar {
-    width: 80px;
+    width: 60px;
 }
 
 .friendlistitem__name {

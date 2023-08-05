@@ -1,0 +1,37 @@
+.statistics__statistics {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: whitesmoke;
+    border: solid;
+    border-radius: 6px;
+    border-color: rgb(216, 224, 234);
+}
+
+.statistics__title {
+    text-transform: uppercase;
+    color: var(--color-text-grey);
+}
+
+.statistics__stat-list {
+    display: flex;
+    
+    
+}
+
+.statistics__item {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    padding:  10px;
+   
+}
+
+.statistics__label {
+    color: white;
+}
+
+.statistics__percentage {
+    color: white;
+    font-size: 24px;
+}

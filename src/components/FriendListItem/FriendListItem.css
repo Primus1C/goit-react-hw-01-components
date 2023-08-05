@@ -1,0 +1,36 @@
+.friendlistitem__item{
+    display: flex;
+    flex-direction: row;
+    padding-left: 40px;
+    width: 300px;
+    align-items: center;
+    gap: 30px;
+    background-color: beige;
+    border: solid;
+    border-color: var(--color-text-grey);
+    border-radius: 6px;
+}
+
+.friendlistitem__statusOn {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: green
+}
+
+.friendlistitem__statusOff {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: red
+}
+
+.friendlistitem__avatar {
+    width: 80px;
+}
+
+.friendlistitem__name {
+    font-size: 26px;
+}

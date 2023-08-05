@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import styles from "./Profile.css";
+//import styles from "./Profile.css";
 
 function Profile(props) {
     return (

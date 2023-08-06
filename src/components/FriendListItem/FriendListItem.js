@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import './FriendListItem.css';
 
-const FriendListItem = ({ id, avatar, name, isOnline = false }) => {
+const FriendListItem = ({ avatar, name, isOnline = false }) => {
   return (
-    <li key={id} className="friendlistitem__item">
+    <li className="friendlistitem__item">
       <span
         className={
           isOnline ? 'friendlistitem__statusOn' : 'friendlistitem__statusOff'
@@ -23,7 +23,6 @@ const FriendListItem = ({ id, avatar, name, isOnline = false }) => {
 };
 
 FriendListItem.propTypes = {
-  id: PropTypes.number.isRequired,
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool,

@@ -1,39 +1,43 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import './Statistics.css';
 
-const Statistics = ({ stats, title = "Upload stats" }) => {
-    return (
-        <section className="statistics__statistics">
-            <h2 className="statistics__title">{title}</h2>
+const Statistics = ({ stats, title = 'Upload stats' }) => {
+  return (
+    <section className="statistics__statistics">
+      <h2 className="statistics__title">{title}</h2>
 
-            <ul className="statistics__stat-list">
-                {stats.map((element) => (
-                    <li
-                        className="statistics__item"
-                        key={element.id}
-                        id={element.id}
-                        style={{ backgroundColor: generateColor() }}
-                    >
-                        <span className="statistics__label">
-                            {element.label}
-                        </span>
-                        <span className="statistics__percentage">
-                            {element.percentage}%
-                        </span>
-                    </li>
-                ))}
-            </ul>
-        </section>
-    );
+      <ul className="statistics__stat-list">
+        {stats.map(element => (
+          <li
+            className="statistics__item"
+            key={element.id}
+            id={element.id}
+            style={{ backgroundColor: generateColor() }}
+          >
+            <span className="statistics__label">{element.label}</span>
+            <span className="statistics__percentage">
+              {element.percentage}%
+            </span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
 };
 
 Statistics.propTypes = {
-    stats: PropTypes.array,
-    title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string,
+      percentage: PropTypes.number.isRequired,
+    }).isRequired
+  ),
+  title: PropTypes.string,
 };
 
 function generateColor() {
-   return "#" + ((Math.random() * 0x1000000) | 0x1000000).toString(16).slice(1);
-};
+  return '#' + ((Math.random() * 0x1000000) | 0x1000000).toString(16).slice(1);
+}
 
 export default Statistics;
